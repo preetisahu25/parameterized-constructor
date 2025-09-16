@@ -1,0 +1,21 @@
+include <iostream>
+using namespace std;
+class Student{
+    string name;
+    int roll;
+    
+    public:
+    Student( string n,int r){
+        name= n;
+        roll= r;
+        cout<<" parameterized constructor called!"<<endl;
+    }
+    void display(){
+        cout<<"Name:"<< name<< ",roll:"<<roll<<endl;
+    }
+};
+int main(){
+    Student s1("preeti", 109);
+    s1.display();
+    return 0;
+}
